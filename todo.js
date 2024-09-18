@@ -1,12 +1,7 @@
-// let arr=[];
+let arr=[];
 
 let addbtn = () => {
     let inpval = document.getElementById("inp").value;
-
-
-    // arr.push(inpval);
-    // localStorage.setItem("todo list",JSON.stringify(arr));
-    // sessionStorage.setItem("todo list",JSON.stringify(arr));
 
     let maindiv = document.getElementById("maindiv");
     console.log(maindiv);
@@ -59,6 +54,9 @@ let addbtn = () => {
         });
 
         document.getElementById("inp").value="";
+        arr.push(inpval);
+        localStorage.setItem("todo list",JSON.stringify(arr));
+        sessionStorage.setItem("todo list",JSON.stringify(arr));
 
 
     };
